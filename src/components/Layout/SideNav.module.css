@@ -1,0 +1,55 @@
+
+.root {
+  padding-right: 2px;
+  min-height: 150px;
+  background-color: #2121215d;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px 0 0 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.38);
+  width: 38px;
+  transition: all 250ms ease;
+  z-index: 1;
+}
+.expandedRoot {
+  width: 180px !important;
+  background-color: #212121f1 !important;
+}
+
+.item {
+  color: #fff;
+  color: var(--sidenav-color);
+  padding: 8px 6px;
+  cursor: pointer;
+  width: 100% !important;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out 0ms;
+  min-width: 100px;
+}
+.expanded {
+  transition: opacity 250ms ease-in-out 100ms;
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .item {
+    padding: 12px 6px;
+  }
+}

@@ -1,0 +1,21 @@
+.root {
+    height: 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: all 150ms ease-in-out;
+    border-bottom: 1px solid transparent;
+    transition-property: border;
+    z-index: 1;
+}
+.headerInner {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.scrolled {
+    background-color: var(--body-bg-color);
+    border-bottom: 1px solid var(--accent-color);
+}

@@ -1,0 +1,16 @@
+.root {
+  min-width: 200px;
+  width: fit-content;
+  opacity: 0;
+  margin: 30px auto;
+  color: var(--accent-color);
+  border-radius: 0 20px 20px 0;
+  border-right: 1px solid var(--accent-color);
+  padding: 30px 20px;
+}
+.root span {
+  transition: transform 150ms linear;
+}
+.root:hover span {
+  transform: translateX(10px);
+}

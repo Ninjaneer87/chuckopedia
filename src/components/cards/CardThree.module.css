@@ -1,0 +1,12 @@
+.root {
+  min-height: 150;
+  height: 100%;
+  opacity: 0;
+  padding: 20px;
+  border-right: 1px solid var(--accent-color);
+  border-radius: 20px;
+}
+
+.value {
+  color: var(--text-color);
+}

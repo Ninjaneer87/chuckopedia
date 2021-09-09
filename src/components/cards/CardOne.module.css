@@ -1,0 +1,35 @@
+.root {
+  min-height: 150;
+  height: 100%;
+  opacity: 0;
+  padding: 15px;
+  border: 1px dashed var(--accent-color);
+}
+
+.root::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--accent-color);
+  border-right: none;
+  border-bottom: none;
+}
+
+.root::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--accent-color);
+  border-left: none;
+  border-top: none;
+}
+
+.value {
+  color: var(--text-color);
+}

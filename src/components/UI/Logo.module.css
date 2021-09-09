@@ -1,0 +1,30 @@
+
+.root {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    padding: 4px;
+    border-radius: 6px;
+    height: 3rem;
+    box-sizing: border-box;
+}
+.root:hover .logoImg {
+    transform: rotate(360deg);
+}
+.logoImg {
+    transition: all 200ms linear;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px 2px rgba(255, 0, 0, 0));
+}
+.logoText {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--accent-color);
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+}

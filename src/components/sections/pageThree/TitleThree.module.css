@@ -1,0 +1,12 @@
+.root {
+  color: var(--text-color);
+  width: 300px;
+  max-width: 90vw;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  position: relative;
+  border-right: 1px solid var(--accent-color);
+  border-radius: 20px;
+}

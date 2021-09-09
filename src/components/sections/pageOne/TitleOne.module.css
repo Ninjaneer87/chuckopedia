@@ -1,0 +1,33 @@
+.root {
+  color: var(--text-color);
+  width: 300px;
+  max-width: 90vw;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+.root::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 5px solid var(--accent-color);
+  border-right: none;
+  border-bottom: none;
+}
+
+.root::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 5px solid var(--accent-color);
+  border-left: none;
+  border-top: none;
+}

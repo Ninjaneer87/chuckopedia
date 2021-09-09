@@ -1,0 +1,47 @@
+.root {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay span {
+  position: absolute;
+  top: calc(50% - 0px);
+  width: 50vw;
+  height: 50vw;
+  transform-origin: 25vw 0;
+  border-radius: 100vh;
+  transform: rotate(calc(90deg * var(--i)));
+  filter: blur(10px);
+  opacity: .2;
+}
+.overlay span:nth-child(1) {
+  background-color: var(--accent-color);
+}
+.overlay span:nth-child(2) {
+  background-color: var(--accent-color);
+}
+.overlay span:nth-child(3) {
+  background-color: var(--accent-color);
+}
+.overlay span:nth-child(4) {
+  background-color: var(--accent-color);
+}
+
+@media (min-width: 960px) {
+  .overlay span  {
+    width: 24vw;
+    height: 24vw;
+    transform-origin: 12vw 0;
+  }
+}
