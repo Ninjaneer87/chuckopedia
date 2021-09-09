@@ -22,7 +22,3 @@ machine, then run:
 
 ### npm start
 
-
-There is a live version running at this url:
-
-[https://andrejground.com/]
