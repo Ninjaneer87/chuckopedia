@@ -3,9 +3,9 @@ import Notification from "../UI/Notification";
 import Modal, { hideModal } from "../UI/Modal";
 import classes from './Layout.module.css'
 import SideNav from "./SideNav";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import LayoutContext from "../../context/layoutContext";
-import { useContext } from "react/cjs/react.development";
+// import {  } from "react/cjs/react.development";
 import useDarkMode from "use-dark-mode";
 import SeenJokesModal, { hideJokesModal } from "../sections/shared/SeenJokesModal";
 import ScrollTop from "../UI/ScrollTop";

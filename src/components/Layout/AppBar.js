@@ -1,9 +1,9 @@
 import classes from "./AppBar.module.css";
 import Container from "../UI/Container";
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Logo from "../UI/Logo";
 import { useInView } from "react-intersection-observer";
-import { useContext } from "react/cjs/react.development";
+// import {  } from "react/cjs/react.development";
 import LayoutContext from "../../context/layoutContext";
 
 const AppBar = () => {
